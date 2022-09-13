@@ -14,6 +14,10 @@ button:hover {
     transform: translateY(40%);
 }
 
+label {
+    color: #ffffff;
+}
+
 .menu {
     margin: auto;
     display: flex;

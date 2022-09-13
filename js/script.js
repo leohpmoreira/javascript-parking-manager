@@ -25,10 +25,12 @@ function hideParking() {
 
 function enableDoors() {
     newDoors.style.opacity = '1'
+    newDoorsLabel.style.opacity = '1'
 }
 
 function disableDoors() {
     newDoors.style.opacity = '0'
+    newDoorsLabel.style.opacity = '0'
 }
 
 function showFree() {
@@ -123,6 +125,7 @@ const newBrand = document.getElementById('newBrand')
 const newColor = document.getElementById('newColor')
 const newOwner = document.getElementById('newOwner')
 const newDoors = document.getElementById('newDoors')
+const newDoorsLabel = document.getElementById('newDoorsLabel')
 const cancelParkBtn = document.getElementById('cancelPark')
 const acceptParkBtn = document.getElementById('acceptPark')
 
