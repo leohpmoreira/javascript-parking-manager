@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parking Lot Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="js/script.js" defer></script>
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="menu" id="menuDiv">
+            <button type="button" class="menuButton" id="parkButton">Park vehicle</button>
+            <button type="button" class="menuButton" id="freeButton">Free spot</button>
+            <button type="button" class="menuButton" id="reportButton">Create report</button>
+            <button type="button" class="menuButton" id="incomeButton">Total income</button>
+        </div>
+        <div class="newParking" id="parkingDiv">
+            <div class="radioDiv">
+                <p>Type of vehicle:</p>
+                <input type="radio" id="newCar" name="vehicleType" value="Car">
+                <label for="newCar">Car</label>
+                <input type="radio" id="newMotorcycle" name="vehicleType" value="Motorcycle">
+                <label for="newMotorcycle">Motorcycle</label>
+            </div>
+            <input type="text" class="parkingInput" id="newPlate" placeholder="Vehicle Plate">
+            <label for="newPlate">Vehicle Plate</label>
+            <input type="text" class="parkingInput" id="newBrand" placeholder="Brand Name">
+            <label for="newBrand">Brand Name</label>
+            <input type="text" class="parkingInput" id="newColor" placeholder="Color">
+            <label for="newColor">Color</label>
+            <input type="text" class="parkingInput" id="newOwner" placeholder="Owner's Name">
+            <label for="newOwner">Owner's Name</label>
+            <input type="text" class="parkingInput" id="newDoors" placeholder="Number of Doors">
+            <label for="newDoors">Number of Doors</label>
+            <div id="parkingBtnDiv">
+                <button type="button" class="parkingButton" id="cancelPark">&#10006;</button>
+                <button type="button" class="parkingButton" id="acceptPark">&#10004;</button>
+            </div>
+        </div>
+        <div class="freeSpot" id="freeDiv">
+            <div id="tabledDiv">
+                <table id="parkedTable">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Plate</th>
+                        <th>Brand</th>
+                        <th>Color</th>
+                        <th>Owner</th>
+                        <th>Entrance time</th>
+                    </tr>
+                    </thead>
+                    <tbody id="parkedTableBody">
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <input type="search" id="freePlate" placeholder="Vehicle Plate">
+            <label for="freePlate">Vehicle Plate</label>
+            <div id="freeBtnDiv">
+                <button type="button" class="freeButton" id="cancelFree">&#10006;</button>
+                <button type="button" class="freeButton" id="searchFree">&#x1F50E;&#xFE0E;</button>
+            </div>
+        </div>
+        <div class="report" id="reportDiv">
+            <div id="reportTableDiv">
+                <table id="reportTable">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Plate</th>
+                        <th>Brand</th>
+                        <th>Color</th>
+                        <th>Owner</th>
+                        <th>Entrance time</th>
+                        <th>Exit time</th>
+                    </tr>
+                    </thead>
+                    <tbody id="reportTableBody">
+                    </tbody>
+                </table>
+            </div>
+            <button type="button" class="reportButton" id="returnReport">&#x23CE;</button>
+        </div>
+        <div class="income" id="incomeDiv">
+            <h1>Income generated:</h1>
+            <br>
+            <h1 id="totalIncome"></h1>
+            <br>
+            <button type="button" class="incomeButton" id="returnIncome">&#x23CE;</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    transform: translateY(40%);
+}
+
+.menu {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #5b5b5b;
+    width: 50vw;
+    min-height: 50vh;
+    border-radius: 75px;
+}
+
+.menuButton {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    width: 70%;
+    height: 50px;
+}
+
+.newParking {
+    margin: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #5b5b5b;
+    width: 50vw;
+    min-height: 50vh;
+    border-radius: 75px;
+}
+
+.radioDiv {
+    font-size: 1.25rem;
+    color: white;
+}
+
+.parkingInput {
+    font-size: 1.25rem;
+    margin-top: 3px;
+    width: 80%;
+    height: 35px;
+    text-align: center;
+}
+
+#parkingBtnDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.parkingButton {
+    margin-top: 10px;
+    font-size: 2rem;
+    width: 40%;
+    height: 50px;
+}
+
+.freeSpot {
+    margin: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #5b5b5b;
+    width: 50vw;
+    min-height: 50vh;
+    border-radius: 75px;
+}
+
+#freePlate {
+    font-size: 1.25rem;
+    text-align: center;
+    width: 80%;
+}
+
+#freeBtnDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.freeButton {
+    margin-top: 10px;
+    font-size: 2rem;
+    width: 40%;
+    height: 50px;
+}
+
+#tabledDiv {
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: auto;
+    width: 80%;
+    height: 25vh;
+}
+
+#parkedTable {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+#parkedTable th {
+    border: 1px solid #000000;
+    padding: 5px;
+    background:#F0F0F0;
+    top: 0;
+    position: sticky;
+}
+
+#parkedTable td {
+    border: 1px solid #000000;
+    background: #ffffff;
+    padding: 5px;
+}
+
+.report {
+    margin: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #5b5b5b;
+    width: 50vw;
+    min-height: 50vh;
+    border-radius: 75px;
+}
+
+#reportTableDiv {
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: auto;
+    width: 80%;
+    height: 30vh;
+}
+
+#reportTable {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+#reportTable th {
+    border: 1px solid #000000;
+    padding: 5px;
+    background:#F0F0F0;
+    top: 0;
+    position: sticky;
+}
+
+#reportTable td {
+    border: 1px solid #000000;
+    background: #ffffff;
+    padding: 5px;
+}
+
+.reportButton {
+    margin-top: 10px;
+    font-size: 2rem;
+    width: 80%;
+    height: 50px;
+}
+
+.income {
+    margin: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #5b5b5b;
+    width: 50vw;
+    min-height: 50vh;
+    border-radius: 75px;
+    color: #ffffff;
+}
+
+.incomeButton {
+    margin-top: 10px;
+    font-size: 2rem;
+    width: 60%;
+    height: 50px;
+}
